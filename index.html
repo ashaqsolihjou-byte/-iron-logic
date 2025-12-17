@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+
+  <title>IRON LOGIC</title>
+
+  <link rel="manifest" href="./manifest.json" />
+  <meta name="theme-color" content="#FFC400" />
+
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <canvas id="game"></canvas>
+
+  <script type="module" src="./js/main.js"></script>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("./sw.js");
+    }
+  </script>
+
+</body>
+</html>
